@@ -1,0 +1,30 @@
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#f5f7fb;background:#0a0d12}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at top,#162131 0,#0a0d12 45%) fixed}
+.wrap{width:min(1100px,calc(100% - 28px));margin:0 auto;padding:38px 0 60px}
+.hero{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:28px}
+.eyebrow{margin:0 0 8px;color:#7cf7b1;font-weight:800;letter-spacing:.14em;font-size:13px}
+h1{font-size:clamp(34px,6vw,66px);line-height:.95;margin:0}
+.sub{max-width:650px;color:#9aa7b6;font-size:16px}
+.status-card{display:flex;align-items:center;gap:12px;background:#111821;border:1px solid #223040;border-radius:18px;padding:18px 22px;min-width:160px}
+.dot{width:12px;height:12px;border-radius:50%;background:#49ef91;box-shadow:0 0 16px #49ef91}
+.status-card span{font-size:28px;font-weight:800;display:block}
+.status-card small{color:#8290a0}
+.toolbar{display:flex;gap:14px;justify-content:space-between;align-items:center;margin-bottom:14px}
+input{width:min(520px,100%);background:#101720;border:1px solid #223040;color:#fff;border-radius:14px;padding:15px 16px;outline:none}
+input:focus{border-color:#4ee896}
+.meta{display:flex;align-items:center;gap:12px;color:#8190a0;font-size:13px}
+button{border:1px solid #2d3e51;background:#15202b;color:#fff;border-radius:11px;padding:10px 14px;cursor:pointer}
+button:hover{background:#1c2b38}
+.panel{overflow:hidden;border:1px solid #202c3a;border-radius:18px;background:rgba(14,20,28,.88);backdrop-filter:blur(10px)}
+.table-head,.player{display:grid;grid-template-columns:110px 1fr 110px;gap:12px;align-items:center}
+.table-head{padding:13px 18px;color:#708092;font-size:12px;font-weight:800;letter-spacing:.08em;border-bottom:1px solid #202c3a}
+.player{padding:14px 18px;border-bottom:1px solid #18222e}
+.player:last-child{border-bottom:0}
+.id{font-weight:800;color:#84f4b6}
+.name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ping{color:#9ca9b7;text-align:right}
+.empty{padding:32px;text-align:center;color:#788797}
+.error{margin-top:14px;padding:14px 16px;border:1px solid #6e3030;background:#281414;color:#ffb2b2;border-radius:12px}
+.hidden{display:none}
+@media(max-width:700px){.hero{align-items:stretch;flex-direction:column}.status-card{width:100%}.toolbar{align-items:stretch;flex-direction:column}.meta{justify-content:space-between}.table-head,.player{grid-template-columns:72px 1fr 72px}.wrap{padding-top:24px}}
