@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FPlayT Live Players</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">FPLAYT LIVE</p>
+        <h1>Jucători online</h1>
+        <p class="sub">Listă live cu ID, nume și ping. Actualizare automată la fiecare secundă.</p>
+      </div>
+      <div class="status-card">
+        <div class="dot"></div>
+        <div>
+          <span id="online">--</span>
+          <small>online</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="Caută după ID sau nume..." autocomplete="off" />
+      <div class="meta">
+        <span id="updated">Se încarcă...</span>
+        <button id="refresh" type="button">Refresh</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="table-head">
+        <span>ID</span><span>PLAYER</span><span>PING</span>
+      </div>
+      <div id="players" class="players">
+        <div class="empty">Se încarcă lista...</div>
+      </div>
+    </section>
+
+    <p id="error" class="error hidden"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
